@@ -20,7 +20,6 @@ font-size: 35px;
 font-weight: 700;
 }
 
-
 .btn-primary{
 border-radius: 5px;
 background: #FD6E0A;
@@ -235,10 +234,37 @@ footer{
 /* Mobile Responsive */
 
 @media screen and (max-width: 576px) {
-  .skills-container{
+ nav, nav>ul, .banner, .button, .skills-container, .resume-container, footer,.about-info-container{
     flex-direction: column;
   }
-  #what-i-do{
+  nav a{
+    margin: 10px;
+  }
+  .header{
+    background-image: none;
+  }
+  .btn-contract, .btn-primary{
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .banner-pic{
+    width: 100%;
+  }
+  #what-i-do, .banner{
     padding: 20px;
+  }
+  footer, .about{
+    padding: 10px;
+  }
+  .footer-colum{
+    width: 100%;
+  }
+  .contract input[type="text"], .contract input[type="email"], textarea{
+    width: 80%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 920px) {
+  footer{
+    padding: 30px;
   }
 }
